@@ -2,6 +2,7 @@ package com.poblete.actividad_evaluada_registro;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -101,7 +102,8 @@ public class RegistroActivity extends AppCompatActivity {
                     //crear el usuario y añadir a la lista
                     Usuario nUsuario = new Usuario(name, email, password, confirmPassword);
                     listaUsuario.add(nUsuario);
-
+                    //Intent intento = new Intent(RegistroActivity.this, VerRegistroActivity.class);
+                    //startActivity(intento);
                     //resultadoPruebaTXT.setText(listaUsuario.toString());
                 }
             }
