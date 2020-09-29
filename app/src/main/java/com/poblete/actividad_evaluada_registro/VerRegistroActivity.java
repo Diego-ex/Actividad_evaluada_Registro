@@ -26,8 +26,8 @@ public class VerRegistroActivity extends AppCompatActivity {
         recycler = findViewById(R.id.recycler);
 
         recycler.setLayoutManager(new LinearLayoutManager(this));
-
-
+        MiAdaptador adaptador = new MiAdaptador(this, RegistroActivity.listaUsuario);
+        recycler.setAdapter(adaptador);
 
     }
 }

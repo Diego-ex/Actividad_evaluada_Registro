@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class MiAdaptador extends RecyclerView.Adapter<MiAdaptador.ViewHolderDatos> {
     ArrayList<Usuario> listaUsuario;
 
-    public MiAdaptador(ArrayList<Usuario> listaUsuario) {
+    public MiAdaptador(VerRegistroActivity verRegistroActivity, ArrayList<Usuario> listaUsuario) {
         this.listaUsuario = listaUsuario;
     }
 
@@ -23,13 +23,14 @@ public class MiAdaptador extends RecyclerView.Adapter<MiAdaptador.ViewHolderDato
     public MiAdaptador.ViewHolderDatos onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         //enlace
         View view = LayoutInflater.from(parent.getContext()).
-                inflate(R.layout.recycler_simple_item, null, false);
+                inflate(R.layout.recycler_simple_item, parent, false);
         return new ViewHolderDatos(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MiAdaptador.ViewHolderDatos holder, int position) {
-        holder.asignarDatos(listaUsuario.get(position));
+        holder.texto.setText(listaUsuario.get(position).getName());
+        holder.mailText.setText(listaUsuario.get(position).getEmail());
     }
 
     @Override
@@ -38,17 +39,14 @@ public class MiAdaptador extends RecyclerView.Adapter<MiAdaptador.ViewHolderDato
     }
 
     public class ViewHolderDatos extends RecyclerView.ViewHolder {
-        TextView texto;
+        TextView texto, mailText;
         Button button;
+
         public ViewHolderDatos(@NonNull View itemView) {
             super(itemView);
             texto = itemView.findViewById(R.id.texto);
             button = itemView.findViewById(R.id.button);
-
-        }
-
-        public void asignarDatos(Usuario nUsuario) {
-            texto.setText((CharSequence) nUsuario);
+            mailText = itemView.findViewById(R.id.mailText);
         }
     }
 }

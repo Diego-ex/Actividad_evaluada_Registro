@@ -25,6 +25,8 @@ public class RegistroActivity extends AppCompatActivity {
     RadioGroup rbGroup;
     String genero;
     TextView resultadoPruebaTXT;
+    static ArrayList<Usuario> listaUsuario = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,8 +41,6 @@ public class RegistroActivity extends AppCompatActivity {
         confirmPasswordEditText = findViewById(R.id.confirmPasswordEditText);
         rbGroup = findViewById(R.id.rbGroup);
         resultadoPruebaTXT = findViewById(R.id.resultadoPruebaTXT);
-
-        final ArrayList<Usuario> listaUsuario = new ArrayList<>();
 
         rbGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override

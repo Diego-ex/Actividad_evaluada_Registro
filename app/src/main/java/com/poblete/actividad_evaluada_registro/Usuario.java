@@ -17,14 +17,6 @@ public class Usuario{
         this.confirmPassword = confirmPassword;
     }
 
-    @Override
-    public String toString() {
-        return "Usuario" +
-                "\nNombre: " + name +
-                "\nE-mail: " + email +
-                "\nContraseña: " + password;
-    }
-
     public String getName() {
         return name;
     }
