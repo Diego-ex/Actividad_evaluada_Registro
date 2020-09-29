@@ -40,7 +40,7 @@ public class RegistroActivity extends AppCompatActivity {
         passwordEditText = findViewById(R.id.passwordEditText);
         confirmPasswordEditText = findViewById(R.id.confirmPasswordEditText);
         rbGroup = findViewById(R.id.rbGroup);
-        resultadoPruebaTXT = findViewById(R.id.resultadoPruebaTXT);
+        //resultadoPruebaTXT = findViewById(R.id.resultadoPruebaTXT);
 
         rbGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
