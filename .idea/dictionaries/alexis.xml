@@ -3,9 +3,15 @@
     <words>
       <w>aclonica</w>
       <w>bienvenido</w>
+      <w>confirmar</w>
+      <w>contrasena</w>
+      <w>contraseña</w>
+      <w>nombre</w>
       <w>opción</w>
+      <w>registro</w>
       <w>seleccion</w>
       <w>seleccione</w>
+      <w>usuario</w>
     </words>
   </dictionary>
 </component>
