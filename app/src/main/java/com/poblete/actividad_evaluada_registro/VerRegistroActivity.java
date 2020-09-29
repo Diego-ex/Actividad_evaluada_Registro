@@ -12,7 +12,6 @@ import java.util.ArrayList;
 
 public class VerRegistroActivity extends AppCompatActivity {
 
-
     ImageView logoImageView;
     TextView UsuariosTXT;
     RecyclerView recycler;
@@ -27,6 +26,8 @@ public class VerRegistroActivity extends AppCompatActivity {
         recycler = findViewById(R.id.recycler);
 
         recycler.setLayoutManager(new LinearLayoutManager(this));
+
+
 
     }
 }

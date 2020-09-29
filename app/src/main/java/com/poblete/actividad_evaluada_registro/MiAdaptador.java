@@ -21,6 +21,7 @@ public class MiAdaptador extends RecyclerView.Adapter<MiAdaptador.ViewHolderDato
     @NonNull
     @Override
     public MiAdaptador.ViewHolderDatos onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        //enlace
         View view = LayoutInflater.from(parent.getContext()).
                 inflate(R.layout.recycler_simple_item, null, false);
         return new ViewHolderDatos(view);

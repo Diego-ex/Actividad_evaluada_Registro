@@ -2,14 +2,11 @@ package com.poblete.actividad_evaluada_registro;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -96,7 +93,6 @@ public class RegistroActivity extends AppCompatActivity {
                     confirmPasswordEditText.setError("Deben ser iguales");
                     return;
                 }else {
-                    Toast.makeText(RegistroActivity.this, "Validando campos....", Toast.LENGTH_SHORT).show();
                     Toast.makeText(RegistroActivity.this, "Hola " + name , Toast.LENGTH_LONG).show();
 
                     //crear el usuario y añadir a la lista

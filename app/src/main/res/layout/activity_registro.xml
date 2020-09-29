@@ -11,7 +11,7 @@
     <ImageView
         android:id="@+id/logoImageView"
         android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:src="@drawable/main01"
         android:layout_gravity="left" />
 
@@ -126,7 +126,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/aclonica"
-            android:text="Usuarios Registrados:"
+            android:text="Prueba Lista:"
             android:textColor="@color/textColor"
             android:textSize="18dp" />
     </LinearLayout>

@@ -1,6 +1,6 @@
 package com.poblete.actividad_evaluada_registro;
 
-public class Usuario {
+public class Usuario{
 
     private String name;
     private String email;
